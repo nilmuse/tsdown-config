@@ -1,0 +1,83 @@
+{
+  "name": "@ux-ui/tsdown-config",
+  "version": "0.1.0",
+  "description": "tsdown config factory for the ux-ui-pro npm portfolio (assembly.md §5.1/§5.3).",
+  "type": "module",
+  "author": "ux-ui.pro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ux-ui-pro/tsdown-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ux-ui-pro/tsdown-config/issues"
+  },
+  "homepage": "https://github.com/ux-ui-pro/tsdown-config",
+  "sideEffects": false,
+  "packageManager": "npm@10.9.3",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsdown",
+    "lint": "biome check src tests tsdown.config.ts",
+    "lint:fix": "biome check --write src tests tsdown.config.ts",
+    "format": "biome format --write src tests tsdown.config.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:smoke": "node --test \"tests/**/*.js\"",
+    "pack:check": "npm pack --dry-run && publint && attw --pack . --profile node16",
+    "verify": "npm run lint && npm run typecheck && npm run build && npm run test:smoke && npm run pack:check",
+    "prepublishOnly": "npm run clean && npm run verify"
+  },
+  "source": "src/index.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@tsdown/css": ">=0.22.3",
+    "tsdown": ">=0.21.5"
+  },
+  "peerDependenciesMeta": {
+    "@tsdown/css": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.3",
+    "@biomejs/biome": "2.4.16",
+    "@tsdown/css": "^0.22.3",
+    "@types/node": "25.9.2",
+    "publint": "^0.3.21",
+    "rimraf": "6.1.3",
+    "tsdown": "0.22.3",
+    "typescript": "6.0.3"
+  },
+  "keywords": [
+    "tsdown",
+    "config",
+    "build",
+    "library",
+    "ux-ui-pro"
+  ]
+}
