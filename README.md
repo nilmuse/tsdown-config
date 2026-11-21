@@ -1,4 +1,4 @@
-# @ux-ui/tsdown-config
+# @nilmuse/tsdown-config
 
 [tsdown](https://tsdown.dev) config factory for the `nilmuse` npm portfolio. Encodes the §5.1
 library base (`fixedExtension: false`, `minify: false`, `dts` via `tsconfig.build.json`, source
@@ -10,7 +10,7 @@ lines and never drifts.
 ## Installation
 
 ```bash
-npm install -D @ux-ui/tsdown-config tsdown
+npm install -D @nilmuse/tsdown-config tsdown
 # CSS-sidecar packages (§5.3) additionally:
 npm install -D @tsdown/css sass-embedded
 ```
@@ -25,7 +25,7 @@ Standard TS library (§5.1):
 
 ```ts
 // tsdown.config.ts
-import { defineLibrary } from '@ux-ui/tsdown-config';
+import { defineLibrary } from '@nilmuse/tsdown-config';
 
 export default defineLibrary({ platform: 'browser' });
 ```
@@ -34,7 +34,7 @@ Web Component + CSS sidecar (§5.3):
 
 ```ts
 // tsdown.config.ts
-import { defineCssLibrary } from '@ux-ui/tsdown-config';
+import { defineCssLibrary } from '@nilmuse/tsdown-config';
 
 export default defineCssLibrary({
   cssFileName: 'dialog-lite.css',
