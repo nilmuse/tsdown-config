@@ -1,7 +1,7 @@
 import { mergeConfig, type UserConfig } from 'tsdown';
 
 /**
- * Shared tsdown base for the ux-ui-pro portfolio (assembly.md §5.1):
+ * Shared tsdown base for the nilmuse portfolio (assembly.md §5.1):
  * - `fixedExtension: false` -> `index.js` (ESM) + `index.cjs` (CJS) at `"type": "module"` (§4.3);
  * - `minify: false` -> readable library output (§5.1);
  * - `dts` via `tsconfig.build.json` -> public types only (§4.5/§7);

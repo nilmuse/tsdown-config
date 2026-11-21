@@ -1,6 +1,6 @@
 # @ux-ui/tsdown-config
 
-[tsdown](https://tsdown.dev) config factory for the `ux-ui-pro` npm portfolio. Encodes the §5.1
+[tsdown](https://tsdown.dev) config factory for the `nilmuse` npm portfolio. Encodes the §5.1
 library base (`fixedExtension: false`, `minify: false`, `dts` via `tsconfig.build.json`, source
 maps) and the §5.3 CSS-sidecar variant, so each package's `tsdown.config.ts` stays a couple of
 lines and never drifts.

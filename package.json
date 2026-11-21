@@ -1,18 +1,18 @@
 {
   "name": "@ux-ui/tsdown-config",
-  "version": "0.1.0",
-  "description": "tsdown config factory for the ux-ui-pro npm portfolio (assembly.md §5.1/§5.3).",
+  "version": "0.1.1",
+  "description": "tsdown config factory for the nilmuse npm portfolio (assembly.md §5.1/§5.3).",
   "type": "module",
-  "author": "ux-ui.pro",
+  "author": "Maxim <m@nilmuse.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ux-ui-pro/tsdown-config.git"
+    "url": "git+https://github.com/nilmuse/tsdown-config.git"
   },
   "bugs": {
-    "url": "https://github.com/ux-ui-pro/tsdown-config/issues"
+    "url": "https://github.com/nilmuse/tsdown-config/issues"
   },
-  "homepage": "https://github.com/ux-ui-pro/tsdown-config",
+  "homepage": "https://github.com/nilmuse/tsdown-config",
   "sideEffects": false,
   "packageManager": "npm@10.9.3",
   "engines": {
@@ -78,6 +78,6 @@
     "config",
     "build",
     "library",
-    "ux-ui-pro"
+    "nilmuse"
   ]
 }
