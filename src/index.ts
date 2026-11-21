@@ -25,7 +25,7 @@ const base: UserConfig = {
  *
  * @example
  * // tsdown.config.ts
- * import { defineLibrary } from '@ux-ui/tsdown-config';
+ * import { defineLibrary } from '@nilmuse/tsdown-config';
  * export default defineLibrary({ platform: 'browser' });
  */
 export function defineLibrary(overrides: UserConfig = {}): UserConfig {
@@ -43,7 +43,7 @@ export interface CssLibraryOptions extends UserConfig {
  *
  * @example
  * // tsdown.config.ts
- * import { defineCssLibrary } from '@ux-ui/tsdown-config';
+ * import { defineCssLibrary } from '@nilmuse/tsdown-config';
  * export default defineCssLibrary({
  *   cssFileName: 'dialog-lite.css',
  *   entry: { index: 'src/index.ts', vue: 'src/vue.ts' },
